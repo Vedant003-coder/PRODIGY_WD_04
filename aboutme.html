@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaini+Purva&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: url(matrix-5361690_1280.webp) no-repeat fixed center;
+            background-size: cover;
+
+        }
+
+        * {
+            margin: 0pc;
+        }
+
+        .sides,
+        .main,
+        .nav {
+            background: black;
+            position: absolute;
+            border: 8px solid green;
+            margin: 0px;
+        }
+
+        .sides {
+            width: 23%;
+            height: 800px;
+            position: absolute;
+            top: 60px;
+            left: 70px;
+            border-radius: 70px;
+            box-shadow: 10px 20px 30px 30px green;
+        }
+
+        .main {
+            width: 65%;
+            height: 1200px;
+            position: absolute;
+            top: 60px;
+            left: 410px;
+            box-shadow: 10px 20px 30px 30px green;
+            border-radius: 70px;
+        }
+
+        .nav {
+            width: 35%;
+            height: 60px;
+            position: absolute;
+            top: 62px;
+            left: 785px;
+            border-radius: 30px;
+            opacity: 1;
+            border-right: transparent;
+            display: flex;
+        }
+
+        p {
+            color: green;
+            margin-left: 13px;
+            display: block;
+            font-size: 23px;
+            margin-top: 15px;
+            font-family: "Jaini Purva", system-ui;
+            text-decoration: underline;
+
+        }
+
+        img {
+            width: 230px;
+            height: 230px;
+            position: absolute;
+            top: 120px;
+            left: 110px;
+            border-radius: 30px;
+        }
+
+        .name {
+            position: absolute;
+            top: 340px;
+            left: 100px;
+            font-size: 40px;
+            text-decoration: none;
+
+        }
+
+        .box {
+            position: absolute;
+            border: 2px solid green;
+            top: 410px;
+            left: 140px;
+            width: 150px;
+            height: 20px;
+            color: green;
+            padding-left: 10px;
+            font-size: 18px;
+            background-color: grey;
+        }
+
+        .line1 {
+            width: 230px;
+            height: 6px;
+            border-radius: 20px;
+            position: absolute;
+            top: 440px;
+            left: 110px;
+            background: grey;
+        }
+
+        .one,
+        .two,
+        .three {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            position: absolute;
+            top: 500px;
+            left: 110px;
+        }
+
+        .two {
+            height: 60px;
+            position: absolute;
+            top: 600px;
+            left: 110px;
+        }
+
+        .three {
+            height: 60px;
+            position: absolute;
+            top: 700px;
+            left: 110px;
+        }
+
+        .off,
+        .off1,
+        .off2 {
+            position: absolute;
+            top: 510px;
+            left: 160px;
+            font-size: 18px;
+            background-color: grey;
+        }
+
+        .on,
+        .on1,
+        .on2 {
+            position: absolute;
+            top: 470px;
+            left: 160px;
+            font-size: 30px;
+        }
+
+        .on1 {
+            position: absolute;
+            top: 580px;
+            left: 160px;
+            font-size: 30px;
+        }
+
+        .off1 {
+            position: absolute;
+            top: 620px;
+            left: 160px;
+        }
+
+        .off2 {
+            position: absolute;
+            top: 715px;
+            left: 160px;
+        }
+
+        .on2 {
+            position: absolute;
+            top: 675px;
+            left: 160px;
+        }
+
+        .head {
+            position: absolute;
+            top: 212px;
+            left: 529px;
+            width: 680px;
+            font-size: 40px;
+            color: gray;
+            padding-left: 5px;
+            font-family: "Jaini Purva", system-ui;
+            text-decoration: underline;
+        }
+
+        .top,
+        .top1,
+        .top2,
+        .top21,
+        .top3,
+        .top4,
+        .top5,
+        .top6,
+        .top7,
+        .top9,
+        .top10,
+        .top11 {
+            color: rgb(213, 141, 16);
+            position: absolute;
+            top: 152px;
+            font-family: "Jaini Purva", system-ui;
+            left: 449px;
+        }
+
+        .top1 {
+            top: 190px;
+            left: 484px;
+            color: grey;
+        }
+
+        .top2 {
+            top: 230px;
+            left: 512px;
+            font-family: "Jaini Purva", system-ui;
+        }
+
+
+        .top3 {
+            top: 272px;
+            left: 544px;
+            font-family: "Jaini Purva", system-ui;
+
+        }
+
+        .top4 {
+            top: 312px;
+            left: 584px;
+            font-family: "Jaini Purva", system-ui;
+        }
+
+        .top5 {
+            top: 572px;
+            left: 554px;
+            font-family: "Jaini Purva", system-ui;
+        }
+
+        .top6 {
+            top: 842px;
+            left: 554px;
+        }
+
+        .top7 {
+            top: 202px;
+            left: 104px;
+        }
+
+
+
+        .im1,
+        .im2,
+        .im4 {
+            position: absolute;
+            width: 240px;
+            height: 180px;
+            border-radius: 0px;
+            top: 0px;
+            left: 40px;
+            border-radius: 20px;
+            box-shadow: 10px 20px 70px cyan;
+        }
+
+        .tab1,
+        .tab2,
+        .tab3,
+        .tab4,
+        .tab5,
+        .tab6,
+        .tab7,
+        .tab8,
+        .tab9,
+        .tab10,
+        .tab11 {
+
+            border: 5px solid;
+            position: absolute;
+            top: 360px;
+            left: 514px;
+            width: 680px;
+            height: 180px;
+            border-radius: 40px;
+            background-color: grey;
+            box-shadow: 15px 18px 10px pink;
+        }
+
+        .tab2 {
+
+            top: 630px;
+
+        }
+
+        .tab3 {
+            top: 890px;
+
+        }
+
+        .tab4 {
+            left: 834px;
+            top: 550px;
+        }
+
+        .tab5 {
+            top: 920px;
+        }
+
+        .tab6 {
+            top: 920px;
+            left: 825px;
+        }
+
+        .tab7 {
+
+            top: 1200px;
+        }
+
+        .tab8 {
+            top: 1200px;
+            left: 825px;
+        }
+
+        .top9 {
+            top: 1130px;
+            left: 524px;
+        }
+
+        .top10 {
+            top: 1132px;
+            left: 792px;
+        }
+
+        .top11 {
+            top: 1200px;
+            left: 520px;
+        }
+
+        .div1,
+        .div11 {
+            padding-left: 20px;
+            font-size: 35px;
+            padding-top: 2px;
+            color: rgb(175, 175, 10);
+            text-decoration: underline;
+            font-family: "Jaini Purva", system-ui;
+        }
+
+        .div11 {
+            left: 80px;
+        }
+
+        .div2,
+        .div21,
+        .div212,
+        .div213 {
+            font-family: "Jaini Purva", system-ui;
+            color: white;
+            position: absolute;
+            left: 30px;
+            top: 190px;
+            margin-left: 2px;
+            width: 300px;
+            padding-left: 10px;
+            height: 34px;
+        }
+
+        button {
+            width: 120px;
+            height: 50px;
+            position: absolute;
+            top: 1130px;
+            left: 655px;
+            font-family: "Jaini Purva", system-ui;
+            font-size: 18px;
+            border-radius: 40px;
+            background-color: gray;
+            box-shadow: 2px 2px 5px green;
+
+        }
+
+        .div21 {
+            padding-left: 40px;
+        }
+
+        .div212 {
+            padding-left: 20px;
+        }
+
+        .div3,
+        .div31 {
+            font-family: "Jaini Purva", system-ui;
+            color: white;
+            position: absolute;
+            left: 300px;
+            top: 190px;
+            margin-left: 2px;
+            width: 100px;
+            height: 104px;
+        }
+
+        .div213 {
+            padding-left: 66px;
+        }
+
+        .div31 {
+            color: orange;
+        }
+
+        .wri {
+            color: pink;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="sides"></div>
+    <div class="main"></div>
+    <div class="nav">
+        <a href="main.html">
+            <p class="1">#Skills</p>
+        </a>
+        <p class="2">#About Me</p>
+        <a href="acc.html">
+            <p class="3">#Accomplishments</p>
+        </a>
+        <a href="contact.html">
+            <p class="4">#Contact</p>
+        </a>
+    </div>
+    <img src="1704202073988.jpeg">
+    <p class="name">#Parmar Vedant</p>
+    <div class="box">Computer Engineer</div>
+    <hr class="line1">
+    <img class="one" src="images.png">
+    <p class="on">Email</p>
+    <p class="off">parmarvedant013@gmail.com</p>
+    <img class="two" src="images (1).png">
+    <p class="on1">#Linkedin</p>
+    <p class="off1">#Parmar Vedant</p>
+    <img class="three" src="89b2dc6e36070bff0e4946dcf70fed54.jpg">
+    <p class="on2">#Whatsapp</p>
+    <p class="off2">#9106113268</p>
+    <h1 class="top">#include&ltPersonal Me&gt </h1>
+    <h1 class="top1">//Education </h1>
+    <h1 class="top2">for(int age=0;age&lt=22;age++)</h1>
+    <h1 class="top3">{</h1>
+    <h1 class="top4">if(age&gt0 && age&lt16){</h1>
+    <div class="tab1">
+        <h1 class="div1">*Holy Saints School</h1>
+        <p class="wri">->It was the beginning of my journey. I completed my 10th grade here and was one of the top
+            students in my class, excelling both academically and in extracurricular activities. </p>
+    </div>
+    <h1 class="top5">}else if(age&gt16 && age&lt18){</h1>
+    <div class="tab2">
+        <h1 class="div1">*Shakti Science School</h1>
+        <p class="wri">->Having a keen interest in the field of science.I took science stream after 10th and was able to
+            score good marks throughout 11th and 12th which resulted in having a good score in my twelfth boards. </p>
+    </div>
+    <h1 class="top6">}else{</h1>
+    <div class="tab3">
+        <h1 class="div1">*Birla Vishwakarma Mahavidhyalaya</h1>
+        <p class="wri">->Currently I am pursuing my Computer Engineering Degree.I am a third year student and am doing
+            quite well in the understanding and learning new technologies and looking forward to diving more into the
+            world of technology. </p>
+        <h1 class="top7">}</h1>
+    </div>
+    <h1 class="top9">&lt button &gt</h1>
+    <button onclick="Start()">Work Experience</button>
+    <h1 class="top10">&lt/ button &gt</h1>
+    <h1 class="top11">}</h1>
+    <script>
+        function Start() {
+            let val = document.querySelector('.top1');
+            val.textContent = '//Work Experience'
+            let val1 = document.querySelector('.top2')
+            val1.textContent = 'let arr[3]=["College ","Self - Learning","Web Dev Intern"];';
+            let val2 = document.querySelector('.top3')
+            val2.textContent = 'for(int start=0;start<arr.length;start++){';
+            let val3 = document.querySelector('.top4')
+            val3.textContent = 'if(arr[start]=="College"){';
+            let val4 = document.querySelector('.tab1>.div1')
+            val4.textContent = '*College';
+            let val5 = document.querySelector('.tab1>.wri')
+            val5.textContent = 'I have learned many great skills in my college including the courses of Web Development,Computer-Organisation,Network etc';
+            let val6 = document.querySelector('.top5')
+            val6.textContent = '}else if(arr[start]=="Self - Learning"{';
+            let val7 = document.querySelector('.tab2>.div1');
+            val7.textContent = '*Self-Learning';
+            let val8 = document.querySelector('.tab2>.wri')
+            val8.textContent = 'I have learned a lot of things on my own like advanced CSS,going more in depth in javascript and moving forward to learning differnet frameworks';
+            let val9 = document.querySelector('.top6')
+            val9.textContent = '}else if(arr[start]=="Web Dev Intern"{';
+            let val10 = document.querySelector('.tab3>.div1');
+            val10.textContent = '*Web Development Intern';
+            let val11 = document.querySelector('.tab3>.wri');
+            val11.textContent = 'Currently i am learning more about web development by doing projects from Prodigy Infotech';
+            let val12 = document.querySelector('.top9');
+            val12.style.display = 'none';
+            let val13 = document.querySelector('button');
+            val13.style.display = 'none';
+            let val14 = document.querySelector('.top10');
+            val14.style.display = 'none';
+        }
+
+    </script>
+</body>
+
+</html>
